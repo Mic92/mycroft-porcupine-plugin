@@ -53,7 +53,7 @@ class PorcupineWakeword(HotWordEngine):
             .format(keyword_file_paths, sensitivities))
         self.porcupine = pvporcupine.create(
             access_key,
-            keyword_paths=keyword_file_paths,
+            keywords=["jarvis"],
             sensitivities=sensitivities)
 
         LOG.info('Loaded Porcupine')
